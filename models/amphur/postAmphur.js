@@ -5,7 +5,7 @@ module.exports = postAmphur = (req, res) => {
     console.log("error");
   } else {
     const classifiedsadd = {
-      amphur_id: req.body.amphur_id,
+      // amphur_id: req.body.amphur_id,
       amphur_code: req.body.amphur_code,
       amphur_name: req.body.amphur_name,
       province_id: req.body.province_id,
