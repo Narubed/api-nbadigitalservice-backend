@@ -80,11 +80,13 @@ app.put(api + "/district", putDistrict);
 // delete
 app.delete(api + "/province/:id", deleteProvince);
 app.delete(api + "/amphure/:id", deleteAmphur);
-app.delete(api + "/district/:id", deleteDistrict)
+app.delete(api + "/district/:id", deleteDistrict);
 
 app.post(api + "/province", postProvince);
 app.post(api + "/amphure", postAmphur);
 app.post(api + "/district", postDistrict);
+
+app.post(api + "/sms", require("./models/api.dtac/postSMS"));
 
 app.listen(PORT, () => {
   console.log("Node App is running on port =", PORT);
